@@ -14,6 +14,8 @@
 		5A644E781C6E405B004C7937 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A644E761C6E405B004C7937 /* LaunchScreen.storyboard */; };
 		5A644E831C6E405B004C7937 /* KalenderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A644E821C6E405B004C7937 /* KalenderTests.swift */; };
 		5A644E8E1C6E405B004C7937 /* KalenderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A644E8D1C6E405B004C7937 /* KalenderUITests.swift */; };
+		5A644E9C1C6E5297004C7937 /* SagradaFamilia.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 5A644E9B1C6E5297004C7937 /* SagradaFamilia.jpeg */; };
+		5A644E9E1C6E5596004C7937 /* AlbertEinsteinStamp.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5A644E9D1C6E5596004C7937 /* AlbertEinsteinStamp.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		5A644E891C6E405B004C7937 /* KalenderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KalenderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A644E8D1C6E405B004C7937 /* KalenderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KalenderUITests.swift; sourceTree = "<group>"; };
 		5A644E8F1C6E405B004C7937 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A644E9B1C6E5297004C7937 /* SagradaFamilia.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SagradaFamilia.jpeg; sourceTree = "<group>"; };
+		5A644E9D1C6E5596004C7937 /* AlbertEinsteinStamp.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = AlbertEinsteinStamp.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,8 @@
 				5A644E741C6E405B004C7937 /* Assets.xcassets */,
 				5A644E761C6E405B004C7937 /* LaunchScreen.storyboard */,
 				5A644E791C6E405B004C7937 /* Info.plist */,
+				5A644E9D1C6E5596004C7937 /* AlbertEinsteinStamp.jpg */,
+				5A644E9B1C6E5297004C7937 /* SagradaFamilia.jpeg */,
 			);
 			path = Kalender;
 			sourceTree = "<group>";
@@ -193,6 +199,7 @@
 				TargetAttributes = {
 					5A644E691C6E405B004C7937 = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = 5EUNHGP227;
 					};
 					5A644E7D1C6E405B004C7937 = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -230,6 +237,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				5A644E781C6E405B004C7937 /* LaunchScreen.storyboard in Resources */,
+				5A644E9C1C6E5297004C7937 /* SagradaFamilia.jpeg in Resources */,
+				5A644E9E1C6E5596004C7937 /* AlbertEinsteinStamp.jpg in Resources */,
 				5A644E751C6E405B004C7937 /* Assets.xcassets in Resources */,
 				5A644E731C6E405B004C7937 /* Main.storyboard in Resources */,
 			);
@@ -399,10 +408,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Kalender/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = dk.graphicon.Kalender;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -410,10 +422,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Kalender/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = dk.graphicon.Kalender;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
