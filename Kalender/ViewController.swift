@@ -25,6 +25,7 @@ class ViewController: UIViewController {
     }
 
     @IBAction func sendBeskedButtonPress(sender: UIButton) {
+        // Dette er en lille test - her kan du læse lidt om hvem jeg er. 
         beskedLabel.hidden = false
         beskedLabel.text = enterByTextField.text
         beskedLabel.textColor = UIColor.redColor()
