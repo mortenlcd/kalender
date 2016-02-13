@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var enterNameTextField: UITextField!
     @IBOutlet weak var enterByTextField: UITextField!
     @IBOutlet weak var clickButton: UIButton!
+    @IBOutlet weak var secondLabel: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,16 +26,24 @@ class ViewController: UIViewController {
     }
 
     @IBAction func sendBeskedButtonPress(sender: UIButton) {
-        // Dette er en lille test - her kan du læse lidt om hvem jeg er. 
+        // Dette er en lille test - her kan du læse lidt om hvem jeg er.
         beskedLabel.hidden = false
         beskedLabel.text = enterByTextField.text
         beskedLabel.textColor = UIColor.redColor()
+
+        secondLabel.hidden = false
+        secondLabel.text = enterNameTextField.text
+        secondLabel.textColor = UIColor.blueColor()
+        
+        enterNameTextField.text = ""
 
         
         enterByTextField.text = ""
         enterByTextField.resignFirstResponder()
         clickButton.setTitle("Mail sent", forState: UIControlState.Normal)
         clickButton.setTitleColor(UIColor.purpleColor(), forState: UIControlState.Normal)
+        
+
     }
 
 }
